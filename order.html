@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/026/174/585/non_2x/cheese-burger-cartoon-vector.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <title>Order | Burger Boss</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🍔 Burger Boss</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="order-section">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Your Address" required />
+      <textarea rows="4" placeholder="Your Order Details..." required></textarea>
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Burger Boss. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your order has been received. 🍔');
+    });
+  </script>
+</body>
+</html>
